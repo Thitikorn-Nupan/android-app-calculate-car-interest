@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.kotlin.ttnpdev.mobileappinterestcar'
+    compileSdk 33 /* compileSdk means set version compiler (need more 31) */
+
+    defaultConfig {
+        applicationId "com.kotlin.ttnpdev.mobileappinterestcar"
+        minSdk 32
+        targetSdk 33 /* minSdk and targetSdk mean define for run android support */
+        versionCode 1
+        versionName "1.0" /* number of version application */
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    /***** Resource Nesting Example (set resource of folder)  using the gradle build system (จัดระเบียบ folder) *****/
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    /*****  src/main/res : notice main before res folder */
+                    'src/main/res' ,
+                    'src/main/res/image',
+                    'src/main/res/design',
+                    'src/main/res/modifier-values',
+                    'src/main/res/layouts',
+                    'src/main/res/layouts/interest-car',
+                    'src/main/res/layouts/intro'
+            ]
+        }
+    }
+    /**************************/
+
+}
+
+dependencies { /* depend for app */
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

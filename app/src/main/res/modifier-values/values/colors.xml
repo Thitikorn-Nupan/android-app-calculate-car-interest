@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- color for themes -->
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#3B4477</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+    <!-- color for themes -->
+
+    <!-- color activity intro -->
+    <color name="bad_input">#911D1F</color>
+    <color name="ok_input">#1B5E20</color>
+    <!-- color activity intro -->
+</resources>

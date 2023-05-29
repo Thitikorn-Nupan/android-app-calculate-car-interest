@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- we access by app:hintTextAppearance="@style/<name stype>" because can't set size of hit text -->
+    <style name="FloatTextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">40sp</item>
+    </style>
+</resources>

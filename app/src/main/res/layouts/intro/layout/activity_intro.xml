@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMainIntro"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#616CA6"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+            app:cardCornerRadius="25sp"
+            app:cardBackgroundColor="#576093"
+            android:id="@+id/cardLogin"
+            android:layout_width="650sp"
+            android:layout_height="440sp"
+            app:layout_constraintTop_toTopOf="@id/constraintMainIntro"
+            android:layout_marginTop="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="400dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintMainInsideCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView app:layout_constraintTop_toTopOf="@id/constraintMainInsideCard"
+                          android:id="@+id/titleCardLogin"
+                          android:gravity="center"
+                          android:textColor="#BF333030"
+                          android:textStyle="bold"
+                          android:textSize="60sp"
+                          android:text="@string/title_card_intro"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="42dp"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintEnd_toEndOf="parent"
+                          android:layout_marginStart="20dp"
+                          android:layout_marginEnd="20dp"
+                          app:layout_constraintHorizontal_bias="0.0"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        app:hintTextAppearance="@style/FloatTextLabel"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxBackgroundColor="#D8F3C076"
+                        app:boxCornerRadiusTopStart="20sp"
+                        app:boxCornerRadiusBottomStart="20sp"
+                        app:boxCornerRadiusTopEnd="20sp"
+                        app:boxCornerRadiusBottomEnd="20sp"
+                        android:id="@+id/inputLayoutName"
+                        app:layout_constraintTop_toBottomOf="@id/titleCardLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:maxHeight="150sp"
+                            android:textColor="#C6221E1E"
+                            android:id="@+id/inputEditName"
+                            android:textSize="80sp"
+                            android:padding="30sp"
+                            android:textStyle="bold"
+                            android:maxLength="20"
+                            android:hint="@string/hind_card_intro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLogin"
+                        android:textColor="#C6221E1E"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toBottomOf="@+id/inputLayoutName"
+                        android:background="@drawable/button_intro"
+                        android:text="@string/bt_card_intro"
+                        android:layout_width="610sp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="30dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

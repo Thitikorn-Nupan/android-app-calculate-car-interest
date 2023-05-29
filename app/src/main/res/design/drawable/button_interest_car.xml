@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+    <shape
+            android:shape="oval">
+        <!-- rectangle(n. สี่เหลี่ยม) , oval(n. วงรี) -->
+        <solid android:color="#576093" />
+        <corners android:radius="30dp" />
+        <!-- ** -->
+    </shape>
+    </item>
+</selector>

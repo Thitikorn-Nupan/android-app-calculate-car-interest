@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for activity intro -->
+    <string name="name_application">Interest Cars</string>
+    <string name="title_card_intro">WHO ARE YOU</string>
+    <string name="hind_card_intro">Required...</string>
+    <string name="bt_card_intro">submit</string>
+    <string name="after_put_on_good">Good name...</string>
+    <string name="after_put_on_bad">Name shouldn\'t be empty...</string>
+    <!-- for activity intro -->
+
+    <!-- for activity interest car -->
+    <string name="say_hi_user">Hello , <u>Let\'s</u> \nfind Car Interest</string>
+    <string name="unit_thai">฿</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_year">Years</string>
+    <string name="auto_price">Auto Price</string>
+    <string name="hint_auto_price">0000000.00</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="hint_down_payment">..00.0</string>
+    <string name="interest_per_year">Interest Per Year</string>
+    <string name="hint_interest_per_year">0.00</string>
+    <string name="load_term">Loan Term</string>
+    <string name="hint_load_term">0</string>
+    <string name="bt_interest_car">submit</string>
+    <!-- for activity interest car -->
+</resources>
