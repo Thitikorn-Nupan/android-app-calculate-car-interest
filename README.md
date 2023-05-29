@@ -1,1 +1,4 @@
-[# Mobile-App-calculate-car-interest](https://github.com/ttknpde-v/Mobile-App-calculate-car-interest/issues/1#issue-1730519373)
+
+<p align="center">
+  <img src="[your_relative_path_here](https://user-images.githubusercontent.com/97865082/241712732-d9476a47-aabc-4f41-b662-758a56d12eaa.png)" width="350" title="hover text">
+</p>
